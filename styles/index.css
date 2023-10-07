@@ -1,4 +1,3 @@
-/* Reset default margin and padding */
 body, h1, h3, p {
     margin: 0;
     padding: 0;
@@ -23,8 +22,6 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
 }
-
-/* Input fields and buttons */
 input[type="text"],
 input[type="number"] {
     width: 100%;
@@ -48,7 +45,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Student cards */
 .student {
     padding: 10px;
     margin-top: 20px;
@@ -72,7 +68,6 @@ button:hover {
     font-size: 16px;
 }
 
-/* Update and Remove buttons */
 .update_score,
 .remove_student {
     margin-top: 10px;
@@ -95,19 +90,7 @@ button:hover {
     background-color: #c82333;
 }
 
-/* Disabled input */
 input[disabled] {
     background-color: #f0f0f0;
     cursor: not-allowed;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    .student {
-        margin-top: 10px;
-    }
 }
