@@ -1,0 +1,113 @@
+/* Reset default margin and padding */
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input fields and buttons */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Student cards */
+.student {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.student .student_score {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.student p {
+    font-size: 16px;
+}
+
+/* Update and Remove buttons */
+.update_score,
+.remove_student {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update_score {
+    background-color: #28a745;
+    margin-right: 10px;
+}
+
+.update_score:hover,
+.remove_student:hover {
+    background-color: #c82333;
+}
+
+/* Disabled input */
+input[disabled] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .student {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Student Database</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Masai Student DataBase</h1>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="batch" placeholder="Batch">
+    <input type="text" id="section" placeholder="Section">
+    <input type="number" id="eval_score" placeholder="Score">
+    <input type="text" id="image" placeholder="Image URL">
+    <button id="add_student">Add Student</button>
+    <button id="sort-low-to-high">Sort Low to High</button>
+    <button id="sort-high-to-low">Sort High to Low</button>
+    <button id="greater-than">Score >= 5</button>
+    <button id="less-than">Score <= 5</button>
+  </div>
+
+  <div id="students-container" class="container">
+  </div>
+
+
+  <input type="number" id="new_score" disabled>
+  <script src="./src/scripts/index.js"></script>
+</body>
+
+</html>
